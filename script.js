@@ -1,10 +1,10 @@
-// Capture the sentence
-//var sentence = "My long sentence";/*document.getElementById('str');*/
+
 
 // Splits the sentence into an array and finds the longest word
-function findLongestWord(str) {
-    var words = str.split(' ');
-    var maxLength = 0;
+const findLongestWord = () => {
+    let sentence = document.getElementById('str').value;
+    let words = sentence.split(' '); //WHY DOES THIS NOT WORK?
+    let maxLength = 0;
     
     for (let i = 0; i < words.length; i++) {
         if (words[i].length > maxLength) {
@@ -12,13 +12,12 @@ function findLongestWord(str) {
             longestWord = words[i];
         }
     }
-    return maxLength;
+    
+    console.log(sentence);
+    console.log(words);
     console.log(maxLength);
     console.log(longestWord);
+    return longestWord; //It appears that returns have to be after console.logs
+    //return maxLength;
 }
 
-
-
-// Waiting for the doc to load and then listening for the click
-document.addEventListener('click', findLongestWord('my long sentence');
-});
