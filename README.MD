@@ -1,0 +1,1 @@
+The aim of this project is to create a basic app to call a public API. User can capture a sentence, a function finds the longest word in that sentence, returns it, call an API and returns the meaning
