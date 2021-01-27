@@ -17,7 +17,10 @@ const findLongestWord = () => {
     console.log(words);
     console.log(maxLength);
     console.log(longestWord);
-    return longestWord; //It appears that returns have to be after console.logs
-    //return maxLength;
+    document.getElementById('theWord').innerHTML = "The longest word in your sentence is " + longestWord + " with "  + maxLength + " letters.";
+    return longestWord; 
+    return maxLength;//Nothing can be placed after the return calls
+    
 }
 
+//document.getElementById('theWord').innerHTML = 5 + 6;
