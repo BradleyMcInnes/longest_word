@@ -5,17 +5,21 @@
 
 <html>
     
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="styling/style.css" media="screen"/>
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     
-    
-    <header>
+    <div class='container'>
+        <header>
         
-        <h1>Longest word in a sentence and it's meaning</h1>
+            <h1>Longest word in a sentence and it's meaning</h1>
     
-    </header>
+        </header>
     
-    <div>
+    </div>
+    
+    <div class='child'>
         
         <input type="text" Id="str" placeholder="Enter a sentence" required>
         <button type="button" onclick="findLongestWord()">Submit</button>
@@ -24,6 +28,7 @@
     </div>
     
     <p id="theWord"></p>
+    
     
     <script src="script.js"></script>
     
