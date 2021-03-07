@@ -27,6 +27,7 @@ const findLongestWord = () => {
     console.log(longestWord);
     document.getElementById('theWord').innerHTML = "The longest word in your sentence is " + longestWord + " with "  + maxLength + " letters.";
     
+    //calling the wordNix API
     var requestOne = new XMLHttpRequest();
     requestOne.open('GET', 'https://api.wordnik.com/v4/word.json/' + longestWord + '/definitions?limit=10&includeRelated=false&useCanonical=false&includeTags=false&api_key=x3k3yryoxvkxbreilfovr15oqwfm5oczck9jtfel3yxpbf0ez', true);
     requestOne.onload = function () {
