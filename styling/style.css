@@ -33,12 +33,17 @@ h1 {
 }
 
 #str {
-    padding-left: 10px;
-    margin-right: 15px;
-    border: 0;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    padding: 5px 10px 5px 10px; 
+    /*margin-right: 15px;*/
+    border: 2px solid #CD3131;
+    border-radius: 3px;
+    /*box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);*/
     font-family: 'Andika', 'helvetica';
+}
+
+#btn {
+    background-color: #CD3131;
+    border: 0;
 }
 
 
